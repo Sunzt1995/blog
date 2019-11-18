@@ -1,0 +1,1 @@
+2019-11-11 13:36:28.021  WARN 14984 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)

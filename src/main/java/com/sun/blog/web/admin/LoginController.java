@@ -2,6 +2,7 @@ package com.sun.blog.web.admin;
 
 import com.sun.blog.entity.User;
 import com.sun.blog.service.UserService;
+import org.aspectj.weaver.ast.Var;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -39,6 +40,7 @@ public class LoginController {
         if(user != null) {
             user.setPassword(null);
             session.setAttribute("user", user);
+            session.setMaxInactiveInterval(5 * 3600);
             return "admin/index";
         } else {
             attributes.addFlashAttribute("message" , "用户名和密码错误");

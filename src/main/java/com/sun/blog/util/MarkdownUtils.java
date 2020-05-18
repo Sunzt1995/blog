@@ -45,6 +45,7 @@ public class MarkdownUtils {
         Set<Extension> headingAnchorExtensions = Collections.singleton(HeadingAnchorExtension.create());
         //转换table的HTML
         List<Extension> tableExtension = Arrays.asList(TablesExtension.create());
+
         Parser parser = Parser.builder()
                 .extensions(tableExtension)
                 .build();

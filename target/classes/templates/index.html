@@ -76,7 +76,7 @@
                                             </div>
                                         </div>
                                         <div class="right aligned five wide column">
-                                            <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin" th:text="${blog.type.name}">认知升级</a>
+                                            <a href="#"th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin" th:text="${blog.type.name}">认知升级</a>
                                         </div>
                                         
                                     </div>
